@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>search batch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Management/searchBatches.css">
+    </head>
+    <body>
+        <section class="fetchBatch" id="fetchBatch">
+            <div class="container">
+                <h1>Fetch Batch Details</h1>
+                <form id="fetchForm" >
+                    <div class="form-group">
+                        <label for="Subject">Subject</label>
+                        <select id="Subject" required>
+                            <option value="">Select a Subject</option>
+                            <option value="core-java">Core-Java</option>
+                            <option value="programming">programming</option>
+                            <option value="sql">SQL</option>
+                            <option value="Ds">Data Structure</option>
+                            <option value="web-tech">Web-Tech</option>
+                            <option value="react">React</option>
+                            <option value="Nodejs">Node-js</option>
+                            <option value="Devops">Devops</option>
+                            <option value="spring">Spring Boot</option>
+                            <option value="Devops">Devops</option>
+                            <option value="Mangodb">MangoDB</option>
+                            <option value="j2ee">J2EE</option>
+                            <option value="cc">Clout Computing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="batchId">Batch code:</label>
+                        <input type="text" id="batchId" placeholder="Enter Batch code here" required>
+                    </div>
+                    <div class="form-actions">
+                        <button  style="background-color: rgb(116, 133, 211); color: white;"><a href="/Management/Home.html" style="text-decoration: none;color: white;">Back</a></button>
+                        <button type="submit" style="background-color: rgb(105, 188, 105); color: white;">Fetch Details</button>
+                    </div>
+                </form>
+                
+                
+            </div>
+            <div class="batch-details" id="batchDetails">
+                
+            </div>
+        </section>
+        
+        <script src="/Management/searchBatches.js" async defer></script>
+    </body>
+</html>

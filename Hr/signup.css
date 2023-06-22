@@ -1,0 +1,73 @@
+body{
+  background-image: url(/photo/back.jpg);
+  background-size: contain;
+	background-repeat: no-repeat;
+  background-size: 100% 120%;
+  position: relative;
+  
+}
+
+
+h2{
+  color: aliceblue;
+    font-size: 40px;
+    margin-left: 100px;
+  }
+
+  form{
+    margin-top: 50px;
+    font-size: 30px;
+    color: white;
+    margin-left: 140px;
+  }
+  label {
+    font-weight: 100;
+    margin-bottom: 5px;
+    font-size: 40px;
+    color: white;
+  }
+
+  input[type="text"],
+    input[type="password"] {
+      width: 25%;
+      padding: 15px;
+      margin-bottom: 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s ease;
+      height: auto;
+      font-size: 20px;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #4caf50;
+    }
+
+    input[type="submit"] {
+      margin-top: 10px;
+      width: 27.2%;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 20px;
+    }
+
+    
+
+    a {
+      display: flexbox;
+      margin-top: 10px;
+      /* text-align: center; */
+      text-decoration: none;
+      color: white;
+      text-align:150px;
+      margin-left: 150px;
+      font-size: 20px;
+    }
+

@@ -1,0 +1,127 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  /* padding: 0; */
+  background-image: url("/photo/home3.jpg");
+  background-repeat: no-repeat;
+  background-size:  100% 720px;
+  background-position: inherit;
+  user-select: none;
+}
+
+
+
+.navbar {
+  background-color: #5186a4;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  border:  5px solid white;
+  position: relative;
+  
+}
+
+.navbar-brand {
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar a:hover{
+  background-color: rgb(24, 201, 204);
+  border-radius: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  
+}
+
+.navbar li {
+  position: relative;
+  margin-right: 20px;
+  width: fit-content;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding : 0px 10px;
+  font-size: 20px;
+}
+
+.navbar li:hover ul {
+  display: block;
+}
+
+.navbar ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #615252;
+  min-width: 200px;
+}
+
+.navbar ul ul li {
+  width: 100%;
+  margin-right: 0;
+}
+
+.navbar ul ul a {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar li {
+    margin-bottom: 10px;
+  }
+
+  .navbar ul ul {
+    position: static;
+    background-color: transparent;
+    min-width: 0;
+  }
+
+  .navbar ul ul li {
+    width: 100%;
+  }
+
+  .navbar ul ul a {
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+
+
+
+

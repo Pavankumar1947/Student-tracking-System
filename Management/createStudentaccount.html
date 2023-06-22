@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>create stud Account</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Management/createStudentaccount.css">
+    </head>
+    <body>
+        <section class="createStudent" id="createStudent">
+            <div class="container">
+                <h1>Create Student Account</h1>
+                <form id="studentForm" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" placeholder="Enter your username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                        <p class="error-message" id="passwordError"></p>
+                    </div>
+                    <div class="form-actions">
+                        <button style="background-color: blue;" ><a href="Home.html" style="text-decoration: none; color: white;">Back</a></button>
+                        <button type="submit">Create</button>
+                        <button type="reset" style="background-color: rgb(226, 74, 74);">Cancel</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+
+        <script src="/Management/createStudentaccount.js" async defer></script>
+    </body>
+</html>

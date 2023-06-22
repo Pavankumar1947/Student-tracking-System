@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>post req</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./postRequirements.css">
+    </head>
+    <body>
+        <h1>POST REQUIREMENTS</h1>
+        <form id="postRequirementsForm">
+            <label for="companyCode">Company Code:</label>
+            <input type="text" id="companyCode" required placeholder="companyCode">
+
+            <label for="companyFullName">Company Full Name:</label>
+            <input type="text" id="companyFullName"  placeholder="company name">
+
+            <label for="scheduledDate">Scheduled Date:</label>
+            <input type="date" id="scheduledDate" value="" required>
+
+            <label for="skills">Skills:</label>
+            <select id="skills" required>
+                <option value="">Select a skill...</option>
+                <option value="core-java">Core-Java</option>
+                <option value="sql">SQL</option>
+                <option value="web-tech">Web-Tech</option>
+                <option value="react">React</option>
+                <option value="Nodejs">Node-js</option>
+                <option value="Devops">Devops</option>
+                <option value="spring">Spring Boot</option>
+                <option value="mern-stack">MERN-STACK</option>
+                <option value="Devops">Devops</option>
+                <option value="javafullstack">JAVA FULL STACK</option>
+
+
+            </select>
+
+            
+            <label for="positions">Number of Positions:</label>
+            <select id="positions" required>
+                <option value=""> number of positions...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <label for="qualification">Qualification:</label>
+            <select id="qualification" required>
+                <option value="">Select a qualification...</option>
+                <option value="mca">MCA</option>
+                <option value="bca">BCA</option>
+                <option value="mtech">M-Tech</option>
+                <option value="civil">BE-civil</option>
+                <option value="mech">BE-Mech</option>
+                <option value="eceee">BE-EC/EEE</option>
+                <option value="csisit">BE-CS/IS/IT</option>
+                <option value="diplomo">Diplomo</option>
+                <option value="bcom">B-com</option>
+            </select>
+
+            <label for="driveLocation">Drive Location:</label>
+            <input type="text" id="driveLocation" required placeholder="Address">
+            <br>
+            <button><a href="Home.html"> Back</a></button>
+            <input type="reset" value="Cancel">
+            <input type="submit" value="Submit">
+            
+        </form>
+        
+        
+        <script src="./postRequirements.js" async defer></script>
+    </body>
+</html>

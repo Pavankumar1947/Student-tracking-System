@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+
+:root{
+   --green:#00E77F;
+   --white:#fff;
+   --light-white:#aaa;
+   --black:#3d3d3d;
+   --light-bg:#4b4b4b;
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: .2s linear;
+   text-transform: capitalize;
+}
+
+*::selection{
+   background-color: var(--white);
+   color:var(--black);
+}
+
+.extra {
+	width: 100%;
+}
+.extra p {
+	padding: 30px;
+	padding-bottom: 250px;
+	font-size: 50px;
+	text-align: center;
+	color: #fff;
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("/photo/b1.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: cursive;
+	z-index: -9;
+}
+.smbox {
+	display: flex;
+	flex-wrap: wrap;
+	transform: translateY(-100px);
+	justify-content: center;
+}
+.smbox span {
+	margin: 1%;
+	background: #fff;
+	box-shadow: inset 0px 0px 25px rgba(0,0,0,0.2),
+						0 0 40px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	padding: 30px 50px;
+	cursor: pointer;
+}
+.smbox span:hover {
+	transform: scale(1.3);
+	transition: .5s ease;
+}
+.smbox .data {
+	font-size: 80px;
+	color: #FA6146;	
+}
+.smbox .det {
+	font-size: 20px;
+	color: #272529;
+	font-family: cursive;
+}
+
+.content p{
+    padding: 30px;
+	
+	font-size: 20px;
+	text-align: center;
+	
+	
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
+
+}
+
+.swiper-pagination-bullet{
+	background-color: var(--white);
+ }
+  
+ .swiper-pagination-bullet-active{
+	background-color: var(--green);
+ }
+
+
+ .reviews-slider .slide{
+	border-radius: .5rem;
+	background-color: var(--light-bg);
+	padding:2rem;
+	margin-bottom: 4rem;
+	user-select: none;
+ }
+ 
+ .reviews-slider .slide p{
+	line-height: 2;
+	font-size: 1rem;
+	color:var(--light-white);
+ }
+ 
+ .reviews-slider .slide .user{
+	display: flex;
+	align-items: center;
+	gap:1.5rem;
+	margin-top: 1.5rem;
+ }
+ 
+ .reviews-slider .slide .user img{
+	height: 7rem;
+	width: 7rem;
+	border-radius: 50%;
+	object-fit: cover;
+ }
+ 
+ .reviews-slider .slide .user h3{
+	font-size: 2rem;
+	color:var(--white);
+	margin-bottom: .7rem;
+ }
+ 
+ .reviews-slider .slide .user .stars i{
+	font-size: 1.5rem;
+	color:var(--green);
+ }
+
+ .swiper-slide{
+	width: auto;
+	border: 1px solid grey;
+	margin-left: 20px;
+	
+ }
+
+ .swiper-wrapper{
+	display: flex;
+	
+ }
+
+ .heading{
+   margin-bottom: 2.5rem;
+   text-align: center;
+   font-size: 3rem;
+   color:var(--white);
+   text-transform: uppercase;
+}
+
+.heading span{
+   color:var(--green);
+   text-transform: uppercase;
+}
+
+.teacher .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 0.5rem;
+}
+
+.teacher .box-container .box {
+	background-color: var(--white);
+	box-shadow: var(--box-shadow);
+	border-radius: .5rem;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+.teacher .box-container .box .image {
+	position: relative;
+	overflow: hidden;
+	
+}
+
+.teacher .box-container .box .image img {
+	background-color: var(--secondary);
+	width: 100%;
+	justify-content: space-between;
+}
+
+.teacher .box-container .box:hover .image .share {
+	bottom: 0;
+}
+
+.teacher .box-container .box .image .share {
+	position: absolute;
+	bottom: -10rem;
+	left: 0;
+	right: 0;
+	padding: 2rem;
+}
+
+.teacher .box-container .box .image .share a {
+	height: 3rem;
+	width: 3rem;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	margin: 0 1rem;
+	color: var(--secondary);
+	background-color: var(--primary-color);
+	border-radius: .5rem;
+	justify-content: space-around;
+}
+
+.teacher .box-container .box .image .share a:hover {
+	color: var(--green);
+	background-color: var(--white);
+	border-radius: 70%;
+}
+
+.teacher .box-container .box .content {
+	padding: 2rem;
+	padding-top: 1rem;
+	align-items: center;
+}
+
+.teacher .box-container .box .content h3 {
+	font-size: 2rem;
+	color: var(--black);
+}
+
+.teacher .box-container .box .content span {
+	font-size: 1.5rem;
+	line-height: 2;
+	color: #777;
+}
+
+.teacher .box-container .box .content span:hover{
+	color: #00E77F;
+	filter: drop-shadow(0 0 20px red);
+}
+
+
+
+.footer{
+	background-color: var(--light-bg);
+	text-align: center;
+	/* padding-bottom: 7rem; */
+ }
+ 
+ .footer .share a{
+	margin:0.1rem;
+	height: 4.5rem;
+	width: 4.5rem;
+	line-height: 4.5rem;
+	border-radius: 50%;
+	font-size: 2rem;
+	color:var(--white);
+	background-color: var(--black);;
+	margin-top: 20px;
+ }
+ 
+ .footer .share a:hover{
+	background-color: var(--green);
+ }
+ 
+ .footer .credit{
+	margin-top: 1.5rem;
+	padding:1.5rem;
+	padding-top: 1.5rem;
+	border-top: .1rem solid var(--light-white);
+	font-size: 2rem;
+	color:var(--light-white);
+ }
+ 
+ .footer .credit span{
+	color:var(--green);
+ }

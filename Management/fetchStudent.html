@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>fetch By ID</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Management/fetchStudent.css">
+    </head>
+    <body>
+        <section class="fetchStudent" id="fetchStudent">
+            <div class="container">
+                <h1>Fetch Student Details</h1>
+                <form id="fetchForm" onsubmit="return fetchStudentDetails()">
+                    <div class="form-group">
+                        <label for="studentId">Student Ph-No:</label>
+                        <input type="text" id="studentId" placeholder="Enter student phone number" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" style="background-color: rgb(116, 133, 211); color: white;"><a href="/Management/Home.html" style="text-decoration: none;color: white;">Back</a></button>
+                        <button type="submit" style="background-color: rgb(105, 188, 105); color: white;">Fetch Details</button>
+                    </div>
+                </form>
+        
+                
+            </div>
+            <div class="student-details" id="studentDetails">
+                <!-- Student details will be displayed here -->
+            </div>
+        </section>
+        
+        <script src="/Management/fetchStudent.js" async defer></script>
+    </body>
+</html>

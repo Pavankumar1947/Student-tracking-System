@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-image: url("/photo/Ann.jpg");
+  background-repeat: no-repeat;
+  background-size:  100% 700px;
+  background-position: inherit;
+  background-color: rgb(162, 218, 181);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: rgb(48, 17, 17);
+  font-size: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color:rgb(203, 210, 206) ;
+}
+
+input[type="date"]{
+  background-color:rgb(203, 216, 210) ;
+  margin-bottom: 10px;
+  
+
+
+}
+
+input[type="submit"],
+input[type="reset"]{
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: #4CAF50;
+}
+
+button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+h1{
+  text-align: center;color: rgb(156, 65, 65);
+}
+
+form{
+  text-align:  center;
+  width: 450px;
+  margin-left: 730px;
+  margin-top: 25px;
+  background-color: white;
+}

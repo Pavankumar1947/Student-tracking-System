@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Student Signup</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Student/signup.css">
+    </head>
+    <body>
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STUDENT DETAILS FORM</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Student Details Form</h1>
+  <form id="studentForm">
+      <div class="form-group">
+          <label for="name">Student Name:</label>
+          <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+          <label for="phone">Phone No:</label>
+          <input type="text" id="phone" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+          <label for="passout">Year of Passout:</label>
+          <select id="passout" required>
+              <option value="">Select</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="qualification">Highest Qualification:</label>
+          <select id="qualification" required>
+              <option value="">Select</option>
+              <option value="SSLC">SSLC</option>
+              <option value="PUC">PUC</option>
+              <option value="UG">Undergraduate</option>
+              <option value="PG">Postgraduate</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="sslc">SSLC %:</label>
+          <input type="text" id="sslc" required>
+      </div>
+      <div class="form-group">
+          <label for="puc">PUC %:</label>
+          <input type="text" id="puc" required>
+      </div>
+      <div class="form-group">
+          <label for="ug">UG:</label>
+          <select id="ug">
+              <option value="">Select</option>
+              <option value="B.Sc">B.Sc</option>
+              <option value="B.Tech">B.Tech</option>
+              <option value="BA">BA</option>
+              <option value="B.Com">B.Com</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="ugp">UG %:</label>
+        <input type="text" id="ugp" required>
+    </div>
+      <div class="form-group">
+          <label for="pg">Post Graduation:</label>
+          <select id="pg">
+              <option value="">Select</option>
+              <option value="M.Sc">M.Sc</option>
+              <option value="M.Tech">M.Tech</option>
+              <option value="MA">MA</option>
+              <option value="M.Com">M.Com</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="pgp">PG %:</label>
+        <input type="text" id="pgp" >
+    </div>
+      <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea id="address" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+          <label for="profileImage">Profile Image:</label>
+          <div class="file-input">
+              <label for="profileImage" id="profileImageLabel">Choose</label>
+              <input type="file" id="profileImage" accept="image/*" onchange="handleFileInputChange(event)">
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="resume">Upload Resume:</label>
+          <div class="file-input">
+              <label for="resume" id="resumeLabel">Choose</label>
+              <input type="file" id="resume" accept=".pdf,.doc,.docx" onchange="handleFileInputChange(event)">
+          </div>
+      </div>
+      <div class="form-actions">
+          <button type="submit">Submit</button>
+          <button type="button" onclick="resetForm()">Cancel</button>
+      </div>
+  </form>
+    <script src="./signup.js"></script>
+</body>
+</html>
+
+        
+        <script src="/Student/signup.js" async defer></script>
+    </body>
+</html>
